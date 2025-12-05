@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Heavitas';
+  src: url('./assets/fonts/Heavitas.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./assets/fonts/Cinzel-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('./assets/fonts/CinzelDecorative-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('./assets/fonts/CinzelDecorative-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url('./assets/fonts/Minecraft.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Super Crawler';
+  src: url('./assets/fonts/SuperCrawler.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karina';
+  src: url('./assets/fonts/Karina.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Angel Wish';
+  src: url('./assets/fonts/AngelWish.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Doc Allisme On Street';
+  src: url('./assets/fonts/docallismeonstreet.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graffiti Youth';
+  src: url('./assets/fonts/GraffitiYouth-Regular.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Stormlight';
+  src: url('./assets/fonts/Stormlight.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Techno Hideo Bold';
+  src: url('./assets/fonts/techno-hideo-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Techno Hideo';
+  src: url('./assets/fonts/techno-hideo.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Boston';
+  src: url('./assets/fonts/boston-caps.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 40% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 30% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 30% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 178 72% 17%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 178 70% 55%;
+    --primary-dark: 178 72% 12%;
+
+    --secondary: 178 55% 28%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-glow: 178 60% 50%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 178 50% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 178 72% 30%;
+
+    --radius: 1rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(178 55% 28%), hsl(178 50% 40%));
+    --gradient-secondary: linear-gradient(135deg, hsl(178 40% 20%), hsl(178 55% 28%));
+    --gradient-glow: radial-gradient(circle at center, hsl(178 70% 55% / 0.3), transparent 70%);
+
+    --shadow-glow: 0 0 40px hsl(178 70% 55% / 0.4);
+    --shadow-glow-lg: 0 0 60px hsl(178 70% 55% / 0.5);
+    --shadow-cyan-glow: 0 0 40px hsl(178 70% 55% / 0.4);
+    --shadow-card: 0 8px 32px hsl(0, 0%, 0% / 0.4);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-card);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--primary-glow) / 0.5);
+  }
+
+  .glow-border {
+    box-shadow: 0 0 0 1px hsl(var(--primary) / 0.3), var(--shadow-glow);
+  }
+
+  .glow-cyan {
+    box-shadow: var(--shadow-cyan-glow);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 0.5px hsl(var(--foreground));
+  }
+
+  .text-stroke-dark {
+    -webkit-text-stroke: 0.5px hsl(var(--background));
+  }
+
+  .text-stroke-primary {
+    -webkit-text-stroke: 1.2px hsl(var(--primary));
+  }
+}
