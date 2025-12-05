@@ -90,9 +90,9 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="flex items-center gap-2 text-foreground/70">
-            <span>© 2025 Kylen. Made with</span>
-            <Heart size={16} weight="fill" className="text-primary animate-pulse" />
+          <div className="flex font-karina items-center gap-2 text-foreground/70">
+            <span>© 2025 Haitam. Made with</span>
+            <Heart size={16} weight="fill" className="text-foreground/70 animate-pulse" />
           </div>
         </div>
       </div>

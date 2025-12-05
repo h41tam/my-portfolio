@@ -112,7 +112,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl glow-text font-cinzel-decorative md:text-5xl font-bold mb-6">
-            Let's <span className="gradient-text">Connect</span>
+            Let's <span className="animate-pulse duration-2400 gradient-text">Connect</span>
           </h2>
           <p className="font-karina text-foreground/70 glow text text-lg">
             Got a project in mind? Let's make your dream <span className='gradient-text'>come to reality.</span>

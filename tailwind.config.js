@@ -21,6 +21,12 @@ module.exports = {
         boston: ['Boston', 'sans-serif'],
         'techno-hideo': ['Techno Hideo', 'sans-serif'],
         'techno-hideo-bold': ['Techno Hideo Bold', 'sans-serif'],
+        digital: ['Digital', 'serif'],
+        'digital-bold': ['Digital-Bold', 'sans-serif'],
+        'digital-italic': ['Digital-Italic', 'sans-serif'],
+        'digital-bold-italic': ['Digital-Bold-Italic', 'sans-serif'],
+        kastroo: ['Kastroo', 'sans-serif'],
+        ghrathe: ['Ghrathe', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

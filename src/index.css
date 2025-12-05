@@ -115,6 +115,55 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Digital';
+  src: url('./assets/fonts/ds-digital.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Digital-Bold';
+  src: url('./assets/fonts/ds-digital-bold.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Digital-Italic';
+  src: url('./assets/fonts/ds-digital-ita.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Digital-Bold-Italic';
+  src: url('./assets/fonts/ds-digital-bold-ita.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kastroo';
+  src: url('./assets/fonts/KASTROO.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ghrathe';
+  src: url('./assets/fonts/Ghrathe.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */

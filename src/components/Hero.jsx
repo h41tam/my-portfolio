@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Button } from './ui/button';
-import { FileArrowDown } from '@phosphor-icons/react';
+import { cn } from '@/lib/utils';
+import { FileArrowDown, ArrowDown } from '@phosphor-icons/react';
 
 const Hero = () => {
   const heroRef = useRef(null);
@@ -67,13 +68,6 @@ const Hero = () => {
     });
   }, []);
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
@@ -108,21 +102,22 @@ const Hero = () => {
           ref={headlineRef}
           className="text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight font-cinzel-decorative"
         >
-          This Is <span className="gradient-text font-bold glow-text">Kyser</span>.
+          I am <span className="gradient-text animate-pulse font-bold duration-800 glow-text">Haitam</span>.
           <br />
-          <span className="text-foreground">Your New</span>
+          <span className="text-foreground">And I Build</span>
           <br />
-          <span className="text-foreground/90">Web Specialist.</span>
+          <span className="text-foreground/90">Websites.</span>
         </h1>
 
         <p
           ref={subtitleRef}
-          className="text-lg md:text-xl  text-foreground/90 max-w-2xl mx-auto mb-10"
+          className="text-base md:text-lg text-foreground/90 max-w-2xl mx-auto mb-10"
         >
-          <span className="gradient-text font-bold glow-text font-cinzel-decorative">I </span>
-          <span className="glow-text font-cinzel">can bring </span>
-          <span className="gradient-text font-bold font-cinzel-decorative glow-text">Your </span>
-          <span className="glow-text font-cinzel">vision to reality</span>
+          <span className="glow-text font-cinzel">contact </span>
+          <span className="gradient-text animate-pulse duration-800 font-bold glow-text font-cinzel-decorative">Me </span>
+          <span className="glow-text font-cinzel">to make </span>
+          <span className="gradient-text animate-pulse duration-800 font-bold font-cinzel-decorative glow-text">Your </span>
+          <span className="glow-text font-cinzel">vision a reality</span>
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -132,22 +127,25 @@ const Hero = () => {
             size="lg"
             className="glass border-primary/50 hover:bg-primary/30 text-lg px-8 font-cinzel-decorative"
           >
-            View My Work
+            <ArrowDown size={16} className="mr-2 scale-110" />
+            Artworks
+            <ArrowDown size={16} className="ml-2 scale-110" />
           </Button>
           <a
             href="./my-resume.pdf"
             download
-            className="inline-flex items-center justify-center
-            rounded-md
-            border border-primary/50
-            bg-white/10 backdrop-blur-md
-            hover:bg-primary/30
-            h-11 px-8 text-lg font-medium
-            transition-colors hover:shadow-lg hover:shadow-primary/50
-            font-cinzel-decorative"
+            className={cn(
+              // match Button outline variant
+              "inline-flex items-center glass justify-center rounded-md border border-primary bg-transparent text-foreground transition-colors",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 disabled:pointer-events-none",
+              // match Button lg size
+              "h-11 px-6 text-base",
+              // your custom extras (kept)
+              "font-cinzel-decorative hover:bg-primary/30 hover:shadow-lg hover:shadow-primary/50"
+            )}
           >
-            My Resume
-            <FileArrowDown size={16} className="ml-2 scale-110" />
+            <FileArrowDown size={16} className="mr-2 scale-110" />
+            Get My Resume
           </a>
         </div>
       </div>

@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowUpRight } from '@phosphor-icons/react';
 import { Button } from './ui/button';
-import project00 from '@/assets/images/project-03.png';
+import project00 from '@/assets/images/project-01.png';
 import project01 from '@/assets/images/project-00.png';
 import project02 from '@/assets/images/project-02.png';
 
@@ -15,7 +15,7 @@ const projects = [
     description: 'Interactive Site to Show the Web My Identity and what I am Capable of',
     image: project00,
     tags: ['React', 'Tailwindcss'],
-    link: 'https://github.com/kylenxcode/my-portfolio/',
+    link: 'https:/h41tam.netlify.app',
   },
   {
     title: 'Golden Wings (work in progress)',
@@ -95,7 +95,7 @@ const Projects = () => {
           ref={titleRef}
           className="text-4xl md:text-5xl font-bold glow-text text-center mb-16 font-cinzel-decorative"
         >
-          Projects I've <span className="gradient-text">Built</span>
+          Projects I've <span className="animate-pulse duration-2400 gradient-text">Built</span>
         </h2>
 
         <div className="projects-grid grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -155,12 +155,12 @@ const Projects = () => {
                 >
                   <Button
                     variant="outline"
-                    className="w-full glass font-cinzel border-primary/50 
+                    className="w-full glass font-cinzel font-bold border-primary/50 
                     hover:bg-[#0c4b49] group-hover:shadow-lg 
                     text-foreground/60 group-hover:text-foreground 
                     group-hover:shadow-primary transition-all duration-500 mt-6"
                   >
-                    View Project
+                    VIEW PROJECT
                     <ArrowUpRight size={16} className="ml-2" />
                   </Button>
                 </a>
