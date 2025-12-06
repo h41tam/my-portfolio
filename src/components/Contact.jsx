@@ -175,7 +175,7 @@ const Contact = () => {
           {/* Social Icons */}
           <div className="social-icons flex justify-center gap-6 mt-8 pt-8 border-t border-border">
             <a
-              href="https://github.com/kylenxcode"
+              href="https://github.com/h41tam"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
@@ -183,7 +183,7 @@ const Contact = () => {
               <GithubLogo size={24} weight="fill" />
             </a>
             <a
-              href="https://linkedin.com/in/kylenxcode"
+              href="https://linkedin.com/in/haitamwarti"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
