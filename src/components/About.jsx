@@ -7,14 +7,16 @@ import profileImage from '@/assets/images/my-image.png';
 gsap.registerPlugin(ScrollTrigger);
 
 const skills = [
+  { icon: "devicon-nodejs-plain", name: "NodeJS" },
   { icon: "devicon-react-plain", name: "React" },
   { icon: "devicon-tailwindcss-plain", name: "Tailwindcss" },
   { icon: "devicon-laravel-plain", name: "Laravel" },
-  { icon: "devicon-mysql-plain", name: "MySQL" },
-  { icon: "devicon-mongodb-plain", name: "MongoDB" },
+  { icon: "devicon-nextjs-plain", name: "NextJS" },
   { icon: "devicon-javascript-plain", name: "JavaScript" },
   { icon: "devicon-php-plain", name: "PHP" },
   { icon: "devicon-typescript-plain", name: "TypeScript" },
+  { icon: "devicon-mysql-plain", name: "MySQL" },
+  { icon: "devicon-mongodb-plain", name: "MongoDB" },
   { icon: "devicon-c-plain", name: "C" },
   { icon: "devicon-cplusplus-plain", name: "C++" },
   { icon: "devicon-python-plain", name: "Python" },
@@ -94,7 +96,7 @@ const About = () => {
           {/* Text */}
           <div ref={contentRef} className="space-y-6">
             <h2 className="text-4xl glow-text md:text-5xl font-bold font-cinzel-decorative">
-              About <span className="animate-pulse duration-2400 gradient-text">Haitam</span> :
+              About <span className="animate-pulse duration-100000 gradient-text">Haitam</span> :
             </h2>
 
             <p className="text-foreground/70 text-base md:text-lg 
@@ -123,7 +125,7 @@ const About = () => {
         <div className="mt-12">
 
           <h3 className="text-4xl md:text-5xl glow-text font-bold font-cinzel-decorative mb-8">
-            What I<span className="animate-pulse duration-2400 gradient-text"> Use</span> :
+            What I<span className="animate-pulse duration-100000 gradient-text"> Use</span> :
           </h3>
 
           {/* Skill container with fade mask */}

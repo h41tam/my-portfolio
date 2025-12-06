@@ -27,6 +27,7 @@ module.exports = {
         'digital-bold-italic': ['Digital-Bold-Italic', 'sans-serif'],
         kastroo: ['Kastroo', 'sans-serif'],
         ghrathe: ['Ghrathe', 'sans-serif'],
+        rodfat: ['Rodfat', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

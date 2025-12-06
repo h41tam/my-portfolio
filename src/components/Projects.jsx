@@ -95,7 +95,7 @@ const Projects = () => {
           ref={titleRef}
           className="text-4xl md:text-5xl font-bold glow-text text-center mb-16 font-cinzel-decorative"
         >
-          Projects I've <span className="animate-pulse duration-2400 gradient-text">Built</span>
+          Projects I've <span className="animate-pulse duration-100000 gradient-text">Built</span>
         </h2>
 
         <div className="projects-grid grid md:grid-cols-2 lg:grid-cols-3 gap-8">

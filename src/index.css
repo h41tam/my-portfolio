@@ -163,6 +163,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Rodfat';
+  src: url('./assets/fonts/rodfat.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.

@@ -102,7 +102,7 @@ const Hero = () => {
           ref={headlineRef}
           className="text-5xl md:text-7xl lg:text-8xl mb-6 leading-tight font-cinzel-decorative"
         >
-          I am <span className="gradient-text animate-pulse font-bold duration-800 glow-text">Haitam</span>.
+          I am <span className="gradient-text animate-pulse font-bold duration-100000 glow-text">Haitam</span>.
           <br />
           <span className="text-foreground">And I Build</span>
           <br />
@@ -111,13 +111,13 @@ const Hero = () => {
 
         <p
           ref={subtitleRef}
-          className="text-base md:text-lg text-foreground/90 max-w-2xl mx-auto mb-10"
+          className="text-base md:text-lg font-cinzel text-foreground/90 max-w-2xl mx-auto mb-10"
         >
-          <span className="glow-text font-cinzel">contact </span>
-          <span className="gradient-text animate-pulse duration-800 font-bold glow-text font-cinzel-decorative">Me </span>
-          <span className="glow-text font-cinzel">to make </span>
-          <span className="gradient-text animate-pulse duration-800 font-bold font-cinzel-decorative glow-text">Your </span>
-          <span className="glow-text font-cinzel">vision a reality</span>
+          <span className="glow-text">contact </span>
+          <span className="gradient-text animate-pulse font-bold duration-100000 glow-text">Me </span>
+          <span className="glow-text">to make </span>
+          <span className="gradient-text animate-pulse font-bold duration-100000 glow-text">Your </span>
+          <span className="glow-text">vision a reality</span>
         </p>
 
         <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 justify-center">

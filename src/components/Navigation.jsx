@@ -27,9 +27,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <button onClick={() => scrollToSection('home')} className="text-2xl scale-150 
-          origin-left font-cinzel glow-text text-foreground/70 hover:text-foreground 
+          origin-left font-rodfat glow-text text-foreground/70 hover:text-foreground 
           transition-colors duration-500">
-            HAITAM
+            H41TAM
           </button>
 
 
@@ -56,8 +56,8 @@ const Navigation = () => {
             </button>
             <span className="h-4 w-px bg-border bg-foreground/80" />
             <a
-              href="https://www.instagram.com/obsessedkyser/"
-              target="_blank" rel="noopener noreferrer"
+              href="/my-resume.pdf"
+              download
               className="rounded-md bg-gradient-to-r from-primary 
               to-secondary text-foreground/80 px-4 py-2 text-sm font-medium 
               transition-all hover:shadow-lg hover:shadow-primary/50 
@@ -65,7 +65,7 @@ const Navigation = () => {
               inline-flex items-center justify-center"
             >
               <UserList size={16} className="mr-2 scale-110" />
-              Socials
+              Resume
             </a>
           </div>
 
@@ -104,8 +104,8 @@ const Navigation = () => {
             </button>
             <div className="h-px w-full bg-border/60" />
             <a
-              href="https://www.instagram.com/obsessedkyser/"
-              target="_blank" rel="noopener noreferrer"
+              href="/my-resume.pdf"
+              download
               className="block w-full text-center rounded-md bg-gradient-to-r from-primary 
               to-secondary text-foreground/80 px-4 py-2 text-sm font-medium 
               transition-all hover:shadow-lg hover:shadow-primary/50 
@@ -113,7 +113,7 @@ const Navigation = () => {
               inline-flex items-center justify-center"
             >
               <UserList size={16} className="mr-3 scale-110" />
-              Socials
+              Resume
             </a>
           </div>
         )}

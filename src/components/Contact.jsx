@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { GithubLogo, LinkedinLogo, EnvelopeSimple } from '@phosphor-icons/react';
+import { GithubLogo, LinkedinLogo, EnvelopeSimple, XLogo } from '@phosphor-icons/react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -112,7 +112,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl glow-text font-cinzel-decorative md:text-5xl font-bold mb-6">
-            Let's <span className="animate-pulse duration-2400 gradient-text">Connect</span>
+            Let's <span className="animate-pulse duration-100000 gradient-text">Connect</span>
           </h2>
           <p className="font-karina text-foreground/70 glow text text-lg">
             Got a project in mind? Let's make your dream <span className='gradient-text'>come to reality.</span>
@@ -189,6 +189,14 @@ const Contact = () => {
               className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
             >
               <LinkedinLogo size={24} weight="fill" />
+            </a>
+            <a
+              href="https://x.com/h41tam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon text-foreground/60 hover:text-foreground p-3 glass rounded-full hover:glow-border hover:bg-primary transition-all duration-300 hover:scale-110"
+            >
+              <XLogo size={24} weight="fill" />
             </a>
           </div>
         </div>
