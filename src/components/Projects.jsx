@@ -11,11 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
   {
-    title: 'My Portfolio',
-    description: 'Interactive Site to Show the Web My Identity and what I am Capable of',
-    image: project00,
-    tags: ['React', 'Tailwindcss'],
-    link: 'https:/h41tam.netlify.app',
+    title: 'Numberone Store',
+    description: 'The Official Website of the Numberone Store, for Clothing and Accessories.',
+    image: project03,
+    tags: ['React', 'Tailwindcss', 'laravel', 'mongodb'],
+    link: 'https://numberone-store.netlify.app/',
   },
   {
     title: 'Golden Wings (work in progress)',
@@ -30,6 +30,13 @@ const projects = [
     image: project02,
     tags: ['Laravel', 'Tailwindcss', 'MongoDB'],
     link: 'https://github.com/kylenxcode/leafhub/',
+  },
+  {
+    title: 'My Portfolio',
+    description: 'Interactive Site to Show the Web My Identity and what I am Capable of',
+    image: project00,
+    tags: ['React', 'Tailwindcss'],
+    link: 'https:/h41tam.netlify.app',
   },
 ];
 
